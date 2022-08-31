@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+    bool point;
     string txt;
     getline(cin, txt);
     stringstream ss;
@@ -20,16 +21,17 @@ int main() {
                 break;
             }
             if(word[i] == '.') {
-                cout << "float ";
-                break;
+                point = true;
+                continue;
             }
             if(isdigit(word[i])) {
                 if(i < word.size() - 1) {
                     continue;
                 } else {
-                    cout << "int ";
+                    cout << (point ? "float " : "int ");
                 }
             }
+            
         }
     }
 
