@@ -29,6 +29,7 @@ int main() {
                     continue;
                 } else {
                     cout << (point ? "float " : "int ");
+                    point = false;
                 }
             }
             
