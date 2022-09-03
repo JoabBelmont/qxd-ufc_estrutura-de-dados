@@ -1,9 +1,9 @@
 #include <iostream>
 #include <iomanip>
 
-using namespace std;
+using namespace std; 
 
-bool primo(int n_) {
+bool primo(int n_) { // diz se um número é primo ou não
     for (int i = 2; i < n_; i++) {
         if(n_ % i == 0) {
             return false;
@@ -19,7 +19,7 @@ int main() {
 
     for (numA; numA <= numB; numA++) {
         if(primo(numA)) {
-            cout << numA << endl;
+            cout << numA << endl; // imprime a soma de todos os números primos até o úlitmo número informado
         }
     }
 

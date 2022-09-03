@@ -8,15 +8,15 @@ int main() {
     cin >> n;
     
     for(int i = 0; i < n; i++) {
-        cin >> vec[i];
+        cin >> vec[i]; // informa o número de dominós
     }
 
-    for(int i = 0; i < n - 1; i++) {
-        if(vec[i] > vec[i + 1]) {
+    for(int i = 0; i < n - 1; i++) { // 
+        if(vec[i] > vec[i + 1]) { // se não estiverem crescentes, encerra o programa
             cout << "precisa de ajuste" << endl;
             return 0;
         }
     }
-    cout << "ok" << endl;
+    cout << "ok" << endl; // se sim, executa até o final
     return 0;
 }

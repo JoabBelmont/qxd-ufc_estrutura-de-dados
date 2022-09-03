@@ -3,3 +3,6 @@
 
 #And the "tempCodeRunnerFile" stuff
 tempCodeRunnerFile.*
+
+#Ignores all test files
+teste.*
