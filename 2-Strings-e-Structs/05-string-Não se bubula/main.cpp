@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool isVowel(char _c) {
+bool isVowel(char _c) { // returna se é uma vogal ou não
 	char vowels[5] { 'a', 'e', 'i', 'o', 'u' };
 	for(int i = 0; i < 5; i++) {
 		if(_c == vowels[i]) {
@@ -14,7 +14,7 @@ bool isVowel(char _c) {
 	return false;
 }
 
-int silCount(string _str) {
+int silCount(string _str) { // conta o número de sílabas de cada palavra
 	int sil { 1 };
 	for(int i = 0; _str[i]; i++) {
 		if(isVowel(_str[i]) && !isVowel(_str[i + 1]) && _str[i + 1]) {
@@ -25,7 +25,7 @@ int silCount(string _str) {
 	return sil;
 }
 
-int wordCount(string _str) {
+int wordCount(string _str) { // conta o número de palavras por frase
 	int count {1};
 	for(int i = 0; _str[i]; i++) {
 		if(_str[i] == ' ') count++;
